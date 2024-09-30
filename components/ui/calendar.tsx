@@ -67,6 +67,25 @@ function Calendar({
     />
   )
 }
+
+type CalendarHeaderProps = {
+  // ここに必要なプロパティを追加
+}
+
+const CalendarHeader = (_props: CalendarHeaderProps) => {
+  // ...
+}
+
+type CalendarNavButtonProps = React.ComponentPropsWithoutRef<"button">
+
+const CalendarPrevButton = (_: CalendarNavButtonProps) => {
+  // ...
+}
+
+const CalendarNextButton = (_: CalendarNavButtonProps) => {
+  // ...
+}
+
 Calendar.displayName = "Calendar"
 
 export { Calendar }
